@@ -27,5 +27,9 @@ This Android application is built to **stream RTSP video feeds** using **ExoMedi
 - **Jetpack Components**: LiveData, ViewModel, Lifecycle  
 - **Other**: Picture-in-Picture API (Android 8.0+)
 
----
+## 📷 Screenshots
+- 
+![ScreenShot-1](https://github.com/user-attachments/assets/5e907cce-a50f-45e1-b570-a5a3b1791fcf)
+![ScreenShot-2](https://github.com/user-attachments/assets/af56d2f5-5f5f-46f8-903a-59751a224839)
+![ScreenShot-3](https://github.com/user-attachments/assets/416d5226-d718-4fc7-ba87-4335f364d247)
 
