@@ -1,0 +1,12 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LiveVideoStreaming" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+
+    </style>
+
+    <style name="Theme.LiveVideoStreaming" parent="Base.Theme.LiveVideoStreaming" />
+</resources>

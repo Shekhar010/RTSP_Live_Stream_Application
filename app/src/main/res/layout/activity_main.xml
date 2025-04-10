@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/url_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/url_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter the stream URL" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="80pt"
+        android:layout_height="62dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/black"
+        android:text="Start Streaming"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/icons8_stream"
+        app:iconGravity="textStart"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/popOutButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/popOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Pop-Out"
+        android:textColor="@color/black"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/pop_up"
+        app:iconGravity="textStart"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url_input_layout"
+        app:show_buffering="when_playing" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recordScreen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/white"
+        android:text="start"
+        android:textColor="@color/black"
+        app:icon="@drawable/startrecording"
+        app:iconGravity="textTop"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/player_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player_view"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
